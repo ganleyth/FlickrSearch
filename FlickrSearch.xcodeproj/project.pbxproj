@@ -11,6 +11,17 @@
 		181DFC6421601BCF005061E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6221601BCF005061E0 /* Main.storyboard */; };
 		181DFC6621601BD3005061E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6521601BD3005061E0 /* Assets.xcassets */; };
 		181DFC6921601BD3005061E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6721601BD3005061E0 /* LaunchScreen.storyboard */; };
+		189EC9DD21601E3300A32A1A /* PhotoSearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189EC9DC21601E3300A32A1A /* PhotoSearchView.storyboard */; };
+		189EC9DF21601E4C00A32A1A /* PhotoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9DE21601E4C00A32A1A /* PhotoSearchViewController.swift */; };
+		189EC9E121601E5F00A32A1A /* PhotoSearchViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9E021601E5F00A32A1A /* PhotoSearchViewInteractor.swift */; };
+		189EC9E321601E7100A32A1A /* PhotoDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189EC9E221601E7100A32A1A /* PhotoDetailView.storyboard */; };
+		189EC9E521601E7B00A32A1A /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9E421601E7B00A32A1A /* PhotoDetailViewController.swift */; };
+		189EC9E921601EBB00A32A1A /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9E721601EBB00A32A1A /* PhotoTableViewCell.swift */; };
+		189EC9EA21601EBB00A32A1A /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189EC9E821601EBB00A32A1A /* PhotoTableViewCell.xib */; };
+		189EC9EC21601EE100A32A1A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9EB21601EE100A32A1A /* Constants.swift */; };
+		189EC9EF21601F1F00A32A1A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9EE21601F1F00A32A1A /* NetworkManager.swift */; };
+		189EC9F121601F2B00A32A1A /* DataCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9F021601F2B00A32A1A /* DataCacheManager.swift */; };
+		189EC9F321601F4800A32A1A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9F221601F4800A32A1A /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +31,17 @@
 		181DFC6521601BD3005061E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181DFC6821601BD3005061E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181DFC6A21601BD3005061E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189EC9DC21601E3300A32A1A /* PhotoSearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoSearchView.storyboard; sourceTree = "<group>"; };
+		189EC9DE21601E4C00A32A1A /* PhotoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewController.swift; sourceTree = "<group>"; };
+		189EC9E021601E5F00A32A1A /* PhotoSearchViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewInteractor.swift; sourceTree = "<group>"; };
+		189EC9E221601E7100A32A1A /* PhotoDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoDetailView.storyboard; sourceTree = "<group>"; };
+		189EC9E421601E7B00A32A1A /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		189EC9E721601EBB00A32A1A /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		189EC9E821601EBB00A32A1A /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		189EC9EB21601EE100A32A1A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		189EC9EE21601F1F00A32A1A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		189EC9F021601F2B00A32A1A /* DataCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCacheManager.swift; sourceTree = "<group>"; };
+		189EC9F221601F4800A32A1A /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +86,7 @@
 		189EC9D421601CE700A32A1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				189EC9F221601F4800A32A1A /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,6 +122,9 @@
 		189EC9D821601D3E00A32A1A /* PhotoSearchView */ = {
 			isa = PBXGroup;
 			children = (
+				189EC9DC21601E3300A32A1A /* PhotoSearchView.storyboard */,
+				189EC9DE21601E4C00A32A1A /* PhotoSearchViewController.swift */,
+				189EC9E021601E5F00A32A1A /* PhotoSearchViewInteractor.swift */,
 			);
 			path = PhotoSearchView;
 			sourceTree = "<group>";
@@ -106,6 +132,8 @@
 		189EC9D921601D4400A32A1A /* PhotoDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				189EC9E221601E7100A32A1A /* PhotoDetailView.storyboard */,
+				189EC9E421601E7B00A32A1A /* PhotoDetailViewController.swift */,
 			);
 			path = PhotoDetailView;
 			sourceTree = "<group>";
@@ -113,16 +141,37 @@
 		189EC9DA21601D9A00A32A1A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				189EC9DB21601DBA00A32A1A /* AppleExtensions */,
+				189EC9E621601E8400A32A1A /* UI Elements */,
+				189EC9ED21601EF600A32A1A /* Managers */,
+				189EC9DB21601DBA00A32A1A /* Apple Extensions */,
+				189EC9EB21601EE100A32A1A /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		189EC9DB21601DBA00A32A1A /* AppleExtensions */ = {
+		189EC9DB21601DBA00A32A1A /* Apple Extensions */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = AppleExtensions;
+			path = "Apple Extensions";
+			sourceTree = "<group>";
+		};
+		189EC9E621601E8400A32A1A /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				189EC9E821601EBB00A32A1A /* PhotoTableViewCell.xib */,
+				189EC9E721601EBB00A32A1A /* PhotoTableViewCell.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		189EC9ED21601EF600A32A1A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				189EC9EE21601F1F00A32A1A /* NetworkManager.swift */,
+				189EC9F021601F2B00A32A1A /* DataCacheManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +232,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189EC9EA21601EBB00A32A1A /* PhotoTableViewCell.xib in Resources */,
+				189EC9DD21601E3300A32A1A /* PhotoSearchView.storyboard in Resources */,
 				181DFC6921601BD3005061E0 /* LaunchScreen.storyboard in Resources */,
 				181DFC6621601BD3005061E0 /* Assets.xcassets in Resources */,
+				189EC9E321601E7100A32A1A /* PhotoDetailView.storyboard in Resources */,
 				181DFC6421601BCF005061E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +248,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189EC9E921601EBB00A32A1A /* PhotoTableViewCell.swift in Sources */,
 				181DFC5F21601BCF005061E0 /* AppDelegate.swift in Sources */,
+				189EC9F121601F2B00A32A1A /* DataCacheManager.swift in Sources */,
+				189EC9F321601F4800A32A1A /* Photo.swift in Sources */,
+				189EC9E121601E5F00A32A1A /* PhotoSearchViewInteractor.swift in Sources */,
+				189EC9EF21601F1F00A32A1A /* NetworkManager.swift in Sources */,
+				189EC9E521601E7B00A32A1A /* PhotoDetailViewController.swift in Sources */,
+				189EC9DF21601E4C00A32A1A /* PhotoSearchViewController.swift in Sources */,
+				189EC9EC21601EE100A32A1A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
