@@ -19,6 +19,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="whU-A9-RwP"/>
                     </view>
+                    <connections>
+                        <outlet property="interactor" destination="77O-qR-ygI" id="BZL-Cg-3dY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYt-tV-7U9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="77O-qR-ygI" customClass="PhotoSearchViewInteractor" customModule="FlickrSearch" customModuleProvider="target">
