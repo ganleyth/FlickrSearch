@@ -22,6 +22,7 @@
 		189EC9EF21601F1F00A32A1A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9EE21601F1F00A32A1A /* NetworkManager.swift */; };
 		189EC9F121601F2B00A32A1A /* DataCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9F021601F2B00A32A1A /* DataCacheManager.swift */; };
 		189EC9F321601F4800A32A1A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9F221601F4800A32A1A /* Photo.swift */; };
+		189EC9F52160208000A32A1A /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9F42160208000A32A1A /* Interactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		189EC9EE21601F1F00A32A1A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		189EC9F021601F2B00A32A1A /* DataCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCacheManager.swift; sourceTree = "<group>"; };
 		189EC9F221601F4800A32A1A /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		189EC9F42160208000A32A1A /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				189EC9EE21601F1F00A32A1A /* NetworkManager.swift */,
 				189EC9F021601F2B00A32A1A /* DataCacheManager.swift */,
+				189EC9F42160208000A32A1A /* Interactor.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				189EC9E921601EBB00A32A1A /* PhotoTableViewCell.swift in Sources */,
 				181DFC5F21601BCF005061E0 /* AppDelegate.swift in Sources */,
+				189EC9F52160208000A32A1A /* Interactor.swift in Sources */,
 				189EC9F121601F2B00A32A1A /* DataCacheManager.swift in Sources */,
 				189EC9F321601F4800A32A1A /* Photo.swift in Sources */,
 				189EC9E121601E5F00A32A1A /* PhotoSearchViewInteractor.swift in Sources */,
@@ -404,7 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QFVJ6KY7E2;
-				INFOPLIST_FILE = FlickrSearch/Info.plist;
+				INFOPLIST_FILE = FlickrSearch/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,7 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QFVJ6KY7E2;
-				INFOPLIST_FILE = FlickrSearch/Info.plist;
+				INFOPLIST_FILE = FlickrSearch/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
