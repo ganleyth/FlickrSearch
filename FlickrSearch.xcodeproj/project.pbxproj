@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1801287F21610FE500F6FE20 /* SamplePhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 1801287E21610FE500F6FE20 /* SamplePhotos.json */; };
 		181DFC5F21601BCF005061E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DFC5E21601BCF005061E0 /* AppDelegate.swift */; };
 		181DFC6421601BCF005061E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6221601BCF005061E0 /* Main.storyboard */; };
 		181DFC6621601BD3005061E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6521601BD3005061E0 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1801287E21610FE500F6FE20 /* SamplePhotos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SamplePhotos.json; sourceTree = "<group>"; };
 		181DFC5B21601BCF005061E0 /* FlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181DFC5E21601BCF005061E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181DFC6321601BCF005061E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1801287B21610E7D00F6FE20 /* SampleJSON */ = {
+			isa = PBXGroup;
+			children = (
+				1801287E21610FE500F6FE20 /* SamplePhotos.json */,
+			);
+			path = SampleJSON;
+			sourceTree = "<group>";
+		};
 		181DFC5221601BCE005061E0 = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				189EC9FE216024B500A32A1A /* Info.plist */,
+				1801287B21610E7D00F6FE20 /* SampleJSON */,
 			);
 			path = FlickrSearchTests;
 			sourceTree = "<group>";
@@ -354,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1801287F21610FE500F6FE20 /* SamplePhotos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
