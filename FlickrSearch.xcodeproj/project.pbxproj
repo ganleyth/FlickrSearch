@@ -27,6 +27,7 @@
 		189ECA0A21604D5300A32A1A /* FlickrSearchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0921604D5300A32A1A /* FlickrSearchError.swift */; };
 		189ECA0C21604DB200A32A1A /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0B21604DB200A32A1A /* Section.swift */; };
 		189ECA0E21605EDB00A32A1A /* URL+AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */; };
+		189ECA142160633F00A32A1A /* URL+AppExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		189ECA0921604D5300A32A1A /* FlickrSearchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchError.swift; sourceTree = "<group>"; };
 		189ECA0B21604DB200A32A1A /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AppExtensions.swift"; sourceTree = "<group>"; };
+		189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AppExtensionsTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */,
+				189ECA122160632300A32A1A /* Tests */,
 			);
 			path = "Apple Extensions";
 			sourceTree = "<group>";
@@ -222,6 +225,14 @@
 			isa = PBXGroup;
 			children = (
 				189ECA052160250100A32A1A /* PhotoSearchViewInteractorTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		189ECA122160632300A32A1A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -352,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				189ECA062160250100A32A1A /* PhotoSearchViewInteractorTests.swift in Sources */,
+				189ECA142160633F00A32A1A /* URL+AppExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
