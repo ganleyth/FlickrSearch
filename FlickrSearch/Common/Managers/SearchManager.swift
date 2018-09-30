@@ -16,6 +16,8 @@ class SearchManager {
         Constants.FlickrAPI.Key.sort: Constants.FlickrAPI.Value.sortByDateDesc,
     ]
     
+    static var NetworkManagerType: NetworkManagerTestable.Type = NetworkManager.self
+    
     static func search(searchTerm: String,
                        page: Int,
                        completion: @escaping (_ photos: [Photo]?, _ error: Error?) -> Void) {
@@ -37,7 +39,7 @@ class SearchManager {
             Constants.FlickrAPI.Key.text: searchTerm
         ].merging(SearchManager.defaultSearchParams) { (current, new) in return current }
         
-        NetworkManager.performRequestFor(url: flickrURL, queryParameters: queryParameters) { (data, response, error) in
+        NetworkManagerType.performRequestFor(url: flickrURL, queryParameters: queryParameters) { (data, response, error) in
             var photos: [Photo]?
             var completionError: Error?
             defer {

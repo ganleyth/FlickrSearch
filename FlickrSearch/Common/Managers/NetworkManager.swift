@@ -14,7 +14,13 @@ protocol URLSessionTestable {
 
 extension URLSession: URLSessionTestable {}
 
-class NetworkManager {
+protocol NetworkManagerTestable {
+    static func performRequestFor(url: URL,
+                                  queryParameters: [String: String]?,
+                                  completion: @escaping (_ data: Data?, _ response: URLResponse?, _ error: Error?) -> Void)
+}
+
+class NetworkManager: NetworkManagerTestable {
     
     static var urlSession: URLSessionTestable = URLSession.shared
     

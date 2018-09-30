@@ -12,6 +12,7 @@
 		180128872161317C00F6FE20 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 180128862161317C00F6FE20 /* Localizable.strings */; };
 		18012889216133C400F6FE20 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18012888216133C400F6FE20 /* SearchManager.swift */; };
 		1801288D21613A0B00F6FE20 /* FlickrAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1801288C21613A0B00F6FE20 /* FlickrAPI.plist */; };
+		1801288F2161586100F6FE20 /* SearchManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801288E2161586100F6FE20 /* SearchManagerTests.swift */; };
 		181DFC5F21601BCF005061E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DFC5E21601BCF005061E0 /* AppDelegate.swift */; };
 		181DFC6421601BCF005061E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6221601BCF005061E0 /* Main.storyboard */; };
 		181DFC6621601BD3005061E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6521601BD3005061E0 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		180128862161317C00F6FE20 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		18012888216133C400F6FE20 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		1801288C21613A0B00F6FE20 /* FlickrAPI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FlickrAPI.plist; sourceTree = "<group>"; };
+		1801288E2161586100F6FE20 /* SearchManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManagerTests.swift; sourceTree = "<group>"; };
 		181DFC5B21601BCF005061E0 /* FlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181DFC5E21601BCF005061E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181DFC6321601BCF005061E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 		189ECA152160675700A32A1A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1801288E2161586100F6FE20 /* SearchManagerTests.swift */,
 				189ECA162160676A00A32A1A /* NetworkManagerTests.swift */,
 			);
 			path = Tests;
@@ -414,6 +417,7 @@
 			files = (
 				189ECA1A2160820D00A32A1A /* PhotoTests.swift in Sources */,
 				189ECA172160676A00A32A1A /* NetworkManagerTests.swift in Sources */,
+				1801288F2161586100F6FE20 /* SearchManagerTests.swift in Sources */,
 				189ECA062160250100A32A1A /* PhotoSearchViewInteractorTests.swift in Sources */,
 				189ECA142160633F00A32A1A /* URL+AppExtensionsTests.swift in Sources */,
 			);
