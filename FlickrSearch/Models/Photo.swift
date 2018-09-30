@@ -41,7 +41,7 @@ extension Photo {
         case medium = "c"
     }
     
-    func cacheString(for size: Size) -> String {
+    func cacheKey(for size: Size) -> PhotoKey {
         return "\(size.rawValue),\(id),\(secret),\(farm),\(server)"
     }
     

@@ -8,20 +8,18 @@
 
 import UIKit
 
+typealias PhotoKey = String
+
 class DataCacheManager {
     static let shared = DataCacheManager()
     
-    let cache = NSCache<NSString, UIImage>()
+    private let cache = NSCache<NSString, UIImage>()
     
-    func cache(image: UIImage) {
-        
+    func cache(image: UIImage, with key: PhotoKey) {
+        cache.setObject(image, forKey: key as NSString)
     }
     
-    func image(for photo: Photo) -> UIImage? {
-        return UIImage()
-    }
-    
-    private func identifierString(for photo: Photo) -> String {
-        return ""
+    func image(for photoKey: PhotoKey) -> UIImage? {
+        return cache.object(forKey: photoKey as NSString)
     }
 }

@@ -37,8 +37,8 @@ class PhotoTests: XCTestCase {
     }
     
     func testCacheString() {
-        XCTAssertEqual(expectedPhoto0.cacheString(for: .small), "n,45008576281,3308734c6a,2,1910")
-        XCTAssertEqual(expectedPhoto0.cacheString(for: .medium), "c,45008576281,3308734c6a,2,1910")
+        XCTAssertEqual(expectedPhoto0.cacheKey(for: .small), "n,45008576281,3308734c6a,2,1910")
+        XCTAssertEqual(expectedPhoto0.cacheKey(for: .medium), "c,45008576281,3308734c6a,2,1910")
     }
     
     func testImageURL() {
