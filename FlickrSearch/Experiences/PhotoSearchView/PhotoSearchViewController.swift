@@ -25,6 +25,11 @@ final class PhotoSearchViewController: UIViewController {
         return label
     }()
     
+    private lazy var searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+//        searchController.inputViewController = 
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -13,6 +13,8 @@
 		18012889216133C400F6FE20 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18012888216133C400F6FE20 /* SearchManager.swift */; };
 		1801288D21613A0B00F6FE20 /* FlickrAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1801288C21613A0B00F6FE20 /* FlickrAPI.plist */; };
 		1801288F2161586100F6FE20 /* SearchManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801288E2161586100F6FE20 /* SearchManagerTests.swift */; };
+		18012891216161B800F6FE20 /* RecentSearchesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18012890216161B800F6FE20 /* RecentSearchesView.storyboard */; };
+		18012893216161CD00F6FE20 /* RecentSearchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18012892216161CD00F6FE20 /* RecentSearchesViewController.swift */; };
 		181DFC5F21601BCF005061E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DFC5E21601BCF005061E0 /* AppDelegate.swift */; };
 		181DFC6421601BCF005061E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6221601BCF005061E0 /* Main.storyboard */; };
 		181DFC6621601BD3005061E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6521601BD3005061E0 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		18012888216133C400F6FE20 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		1801288C21613A0B00F6FE20 /* FlickrAPI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FlickrAPI.plist; sourceTree = "<group>"; };
 		1801288E2161586100F6FE20 /* SearchManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManagerTests.swift; sourceTree = "<group>"; };
+		18012890216161B800F6FE20 /* RecentSearchesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecentSearchesView.storyboard; sourceTree = "<group>"; };
+		18012892216161CD00F6FE20 /* RecentSearchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchesViewController.swift; sourceTree = "<group>"; };
 		181DFC5B21601BCF005061E0 /* FlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181DFC5E21601BCF005061E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181DFC6321601BCF005061E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				189EC9DC21601E3300A32A1A /* PhotoSearchView.storyboard */,
 				189EC9DE21601E4C00A32A1A /* PhotoSearchViewController.swift */,
 				189EC9E021601E5F00A32A1A /* PhotoSearchViewInteractor.swift */,
+				18012890216161B800F6FE20 /* RecentSearchesView.storyboard */,
+				18012892216161CD00F6FE20 /* RecentSearchesViewController.swift */,
 				189ECA04216024CC00A32A1A /* Tests */,
 			);
 			path = PhotoSearchView;
@@ -367,6 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18012891216161B800F6FE20 /* RecentSearchesView.storyboard in Resources */,
 				189EC9EA21601EBB00A32A1A /* PhotoTableViewCell.xib in Resources */,
 				189EC9DD21601E3300A32A1A /* PhotoSearchView.storyboard in Resources */,
 				181DFC6921601BD3005061E0 /* LaunchScreen.storyboard in Resources */,
@@ -400,6 +407,7 @@
 				189EC9F121601F2B00A32A1A /* DataCacheManager.swift in Sources */,
 				189EC9F321601F4800A32A1A /* Photo.swift in Sources */,
 				189EC9E121601E5F00A32A1A /* PhotoSearchViewInteractor.swift in Sources */,
+				18012893216161CD00F6FE20 /* RecentSearchesViewController.swift in Sources */,
 				189EC9EF21601F1F00A32A1A /* NetworkManager.swift in Sources */,
 				189EC9E521601E7B00A32A1A /* PhotoDetailViewController.swift in Sources */,
 				189ECA0C21604DB200A32A1A /* Section.swift in Sources */,
