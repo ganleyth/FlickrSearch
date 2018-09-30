@@ -8,17 +8,12 @@
 
 import UIKit
 
-class PhotoTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+final class PhotoTableViewCell: UITableViewCell {
+    @IBOutlet private weak var photoImageView: UIImageView!
+    @IBOutlet private weak var titleLabelContainer: UIView!
+    @IBOutlet private weak var titleLabel: UILabel!
     
+    func configure(with photo: Photo) {
+        
+    }
 }
