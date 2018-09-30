@@ -9,5 +9,24 @@
 import Foundation
 
 struct Photo: Decodable {
+    let id: String
+    let secret: String
+    let farm: Int
+    let server: String
+}
+
+extension Photo {
+    enum Size: String {
+        case small = "n"
+        case medium = "c"
+    }
     
+    func cacheString(for size: Size) -> String {
+        return "\(size.rawValue),\(id),\(secret),\(farm),\(server)"
+    }
+    
+    func imageURL(for size: Size) -> URL? {
+        let urlString = "https://farm\(farm).staticflickr.com/\(server)/\(id)_\(secret)_\(size.rawValue).jpg"
+        return URL(string: urlString)
+    }
 }
