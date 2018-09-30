@@ -29,6 +29,7 @@
 		189ECA0E21605EDB00A32A1A /* URL+AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */; };
 		189ECA142160633F00A32A1A /* URL+AppExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */; };
 		189ECA172160676A00A32A1A /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA162160676A00A32A1A /* NetworkManagerTests.swift */; };
+		189ECA1A2160820D00A32A1A /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA192160820D00A32A1A /* PhotoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AppExtensions.swift"; sourceTree = "<group>"; };
 		189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AppExtensionsTests.swift"; sourceTree = "<group>"; };
 		189ECA162160676A00A32A1A /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		189ECA192160820D00A32A1A /* PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				189EC9F221601F4800A32A1A /* Photo.swift */,
+				189ECA18216081F800A32A1A /* Tests */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +247,14 @@
 			isa = PBXGroup;
 			children = (
 				189ECA162160676A00A32A1A /* NetworkManagerTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		189ECA18216081F800A32A1A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				189ECA192160820D00A32A1A /* PhotoTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -373,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189ECA1A2160820D00A32A1A /* PhotoTests.swift in Sources */,
 				189ECA172160676A00A32A1A /* NetworkManagerTests.swift in Sources */,
 				189ECA062160250100A32A1A /* PhotoSearchViewInteractorTests.swift in Sources */,
 				189ECA142160633F00A32A1A /* URL+AppExtensionsTests.swift in Sources */,
