@@ -6,4 +6,22 @@
 //  Copyright © 2018 Thomas Ganley. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class DataCacheManager {
+    static let shared = DataCacheManager()
+    
+    let cache = NSCache<NSString, UIImage>()
+    
+    func cache(image: UIImage) {
+        
+    }
+    
+    func image(for photo: Photo) -> UIImage? {
+        return UIImage()
+    }
+    
+    private func identifierString(for photo: Photo) -> String {
+        return ""
+    }
+}
