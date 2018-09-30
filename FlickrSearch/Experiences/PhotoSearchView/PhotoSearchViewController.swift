@@ -11,11 +11,7 @@ import UIKit
 final class PhotoSearchViewController: UIViewController {
     
     @IBOutlet private(set) var interactor: PhotoSearchViewInteractor!
-    @IBOutlet private weak var tableView: UITableView! {
-        didSet {
-            setupTableView()
-        }
-    }
+    @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var searchBar: UISearchBar!
     
     private lazy var enterSearchTermLabel: UILabel? = {
@@ -34,6 +30,7 @@ final class PhotoSearchViewController: UIViewController {
         
         tableView.dataSource = interactor
         searchBar.delegate = interactor
+        setupTableView()
     }
 }
 
