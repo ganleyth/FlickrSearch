@@ -25,6 +25,7 @@
 		189EC9F52160208000A32A1A /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9F42160208000A32A1A /* Interactor.swift */; };
 		189ECA062160250100A32A1A /* PhotoSearchViewInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA052160250100A32A1A /* PhotoSearchViewInteractorTests.swift */; };
 		189ECA0A21604D5300A32A1A /* FlickrSearchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0921604D5300A32A1A /* FlickrSearchError.swift */; };
+		189ECA0C21604DB200A32A1A /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0B21604DB200A32A1A /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		189EC9FE216024B500A32A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189ECA052160250100A32A1A /* PhotoSearchViewInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewInteractorTests.swift; sourceTree = "<group>"; };
 		189ECA0921604D5300A32A1A /* FlickrSearchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchError.swift; sourceTree = "<group>"; };
+		189ECA0B21604DB200A32A1A /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				189EC9EE21601F1F00A32A1A /* NetworkManager.swift */,
 				189EC9F021601F2B00A32A1A /* DataCacheManager.swift */,
 				189EC9F42160208000A32A1A /* Interactor.swift */,
+				189ECA0B21604DB200A32A1A /* Section.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				189EC9E121601E5F00A32A1A /* PhotoSearchViewInteractor.swift in Sources */,
 				189EC9EF21601F1F00A32A1A /* NetworkManager.swift in Sources */,
 				189EC9E521601E7B00A32A1A /* PhotoDetailViewController.swift in Sources */,
+				189ECA0C21604DB200A32A1A /* Section.swift in Sources */,
 				189EC9DF21601E4C00A32A1A /* PhotoSearchViewController.swift in Sources */,
 				189EC9EC21601EE100A32A1A /* Constants.swift in Sources */,
 			);
