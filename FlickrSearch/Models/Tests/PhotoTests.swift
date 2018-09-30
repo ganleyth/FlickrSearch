@@ -35,4 +35,11 @@ class PhotoTests: XCTestCase {
         XCTAssertEqual(photos[1], expectedPhoto1)
         XCTAssertEqual(photos[2], expectedPhoto2)
     }
+    
+    func testCacheString() {
+        let photo = Photo(id: "45008576281", secret: "3308734c6a", farm: 2, server: "1910")
+        
+        XCTAssertEqual(photo.cacheString(for: .small), "n,45008576281,3308734c6a,2,1910")
+        XCTAssertEqual(photo.cacheString(for: .medium), "c,45008576281,3308734c6a,2,1910")
+    }
 }
