@@ -26,6 +26,7 @@
 		189ECA062160250100A32A1A /* PhotoSearchViewInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA052160250100A32A1A /* PhotoSearchViewInteractorTests.swift */; };
 		189ECA0A21604D5300A32A1A /* FlickrSearchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0921604D5300A32A1A /* FlickrSearchError.swift */; };
 		189ECA0C21604DB200A32A1A /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0B21604DB200A32A1A /* Section.swift */; };
+		189ECA0E21605EDB00A32A1A /* URL+AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		189ECA052160250100A32A1A /* PhotoSearchViewInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewInteractorTests.swift; sourceTree = "<group>"; };
 		189ECA0921604D5300A32A1A /* FlickrSearchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchError.swift; sourceTree = "<group>"; };
 		189ECA0B21604DB200A32A1A /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AppExtensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		189EC9DB21601DBA00A32A1A /* Apple Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */,
 			);
 			path = "Apple Extensions";
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				189EC9EF21601F1F00A32A1A /* NetworkManager.swift in Sources */,
 				189EC9E521601E7B00A32A1A /* PhotoDetailViewController.swift in Sources */,
 				189ECA0C21604DB200A32A1A /* Section.swift in Sources */,
+				189ECA0E21605EDB00A32A1A /* URL+AppExtensions.swift in Sources */,
 				189EC9DF21601E4C00A32A1A /* PhotoSearchViewController.swift in Sources */,
 				189EC9EC21601EE100A32A1A /* Constants.swift in Sources */,
 			);
