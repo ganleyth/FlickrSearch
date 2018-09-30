@@ -16,18 +16,17 @@ extension URLSession: URLSessionTestable {}
 
 class NetworkManager {
     
-    enum HTTPMethod: String {
-        case get = "GET"
-        case post = "POST"
-        case delete = "DELETE"
-        case put = "PUT"
-    }
-    
     static var urlSession: URLSessionTestable = URLSession.shared
     
+    /**
+     Performs a network request with the provided URL, HTTP method, and URL parameters.
+     
+     - parameter url: The URL endpoint
+     - parameter queryParameters: The query parameters for the request, in dictionary format
+     - parameter completion: The completion handler for the network request
+     */
     static func performRequestFor(url: URL,
                                   queryParameters: [String: String]? = nil,
-                                  httpMethod: HTTPMethod = .get,
                                   completion: @escaping (_ data: Data?, _ response: URLResponse?, _ error: Error?) -> Void) {
         var requestURL = url
         if let queryParameters = queryParameters {

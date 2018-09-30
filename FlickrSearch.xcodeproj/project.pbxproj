@@ -28,6 +28,7 @@
 		189ECA0C21604DB200A32A1A /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0B21604DB200A32A1A /* Section.swift */; };
 		189ECA0E21605EDB00A32A1A /* URL+AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */; };
 		189ECA142160633F00A32A1A /* URL+AppExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */; };
+		189ECA172160676A00A32A1A /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA162160676A00A32A1A /* NetworkManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		189ECA0B21604DB200A32A1A /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AppExtensions.swift"; sourceTree = "<group>"; };
 		189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AppExtensionsTests.swift"; sourceTree = "<group>"; };
+		189ECA162160676A00A32A1A /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				189EC9F021601F2B00A32A1A /* DataCacheManager.swift */,
 				189EC9F42160208000A32A1A /* Interactor.swift */,
 				189ECA0B21604DB200A32A1A /* Section.swift */,
+				189ECA152160675700A32A1A /* Tests */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -233,6 +236,14 @@
 			isa = PBXGroup;
 			children = (
 				189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		189ECA152160675700A32A1A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				189ECA162160676A00A32A1A /* NetworkManagerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -362,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189ECA172160676A00A32A1A /* NetworkManagerTests.swift in Sources */,
 				189ECA062160250100A32A1A /* PhotoSearchViewInteractorTests.swift in Sources */,
 				189ECA142160633F00A32A1A /* URL+AppExtensionsTests.swift in Sources */,
 			);

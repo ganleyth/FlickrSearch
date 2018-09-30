@@ -12,9 +12,7 @@ extension URL {
     /**
      Generates a URL that results from adding the provided query parameters.
      
-     - parameters:
-     - queryParameters: The parameters to be added to the URL in a dictionary format
-     
+     - parameter queryParameters: The parameters to be added to the URL in a dictionary format
      - returns: The original URL with provided query parameters added
      */
     func adding(queryParameters: [String: String]) -> URL {
