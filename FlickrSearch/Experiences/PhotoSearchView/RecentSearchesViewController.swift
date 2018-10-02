@@ -26,6 +26,11 @@ class RecentSearchesViewController: UIViewController {
         tableView.backgroundColor = .appDarkGrey
         view.backgroundColor = .appDarkGrey
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 }
 
 extension RecentSearchesViewController: UITableViewDataSource {

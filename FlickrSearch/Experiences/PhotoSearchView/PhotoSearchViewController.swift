@@ -39,6 +39,8 @@ final class PhotoSearchViewController: UIViewController {
         searchController.dimsBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchBar.autocorrectionType = .no
+        let searchField = searchController.searchBar.value(forKey: "searchField") as? UITextField
+        searchField?.textColor = .white
         definesPresentationContext = true
         return searchController
     }()

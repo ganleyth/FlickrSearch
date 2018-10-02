@@ -91,5 +91,6 @@ extension PhotoSearchViewInteractor: RecentSearchesDelegate {
     func didSelectRecentSearchTerm(_ searchTerm: String) {
         photos = []
         search(with: searchTerm)
+        UserDefaults.standard.shiftSearchTermToTopOfSearchHistory(searchTerm: searchTerm)
     }
 }
