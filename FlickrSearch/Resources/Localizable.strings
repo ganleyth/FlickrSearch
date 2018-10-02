@@ -1,5 +1,6 @@
-// Search view background view
+// Search view
 "ENTER_SEARCH_TERM" = "Search the Flickr photo libary by entering a title, description, or tag search term above";
+"SEARCH_BAR_PLACEHOLDER" = "Search by title, description, or tag";
 
 // Errors
 "API_PLIST_NOT_FOUND" = "The API plist file is not found.";

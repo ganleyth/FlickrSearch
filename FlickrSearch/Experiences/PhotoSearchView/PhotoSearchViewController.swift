@@ -26,6 +26,7 @@ final class PhotoSearchViewController: UIViewController {
     
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = NSLocalizedString("SEARCH_BAR_PLACEHOLDER", comment: "")
         searchController.searchResultsUpdater = interactor
         searchController.searchBar.delegate = interactor
         definesPresentationContext = true
@@ -54,6 +55,7 @@ private extension PhotoSearchViewController {
         tableView.register(UINib(nibName: "PhotoTableViewCell", bundle: nil), forCellReuseIdentifier: "photoCell")
         tableView.estimatedRowHeight = 200.0
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.scrollsToTop = true
         let backgroundView = UIView(frame: .zero)
         backgroundView.backgroundColor = .appDarkGrey
         tableView.backgroundView = backgroundView
