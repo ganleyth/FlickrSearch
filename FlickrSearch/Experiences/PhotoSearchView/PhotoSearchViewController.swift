@@ -40,6 +40,8 @@ final class PhotoSearchViewController: UIViewController {
     }
     
     func refreshUI() {
+        enterSearchTermLabel?.removeFromSuperview()
+        enterSearchTermLabel = nil
         tableView.reloadData()
         searchController.isActive = false
     }

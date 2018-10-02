@@ -13,6 +13,26 @@ class PhotoSearchViewInteractor: Interactor {
     private var photoSearchViewController: PhotoSearchViewController? {
         return viewController as? PhotoSearchViewController
     }
+    
+    private func search(with searchTerm: String) {
+        SearchManager.search(searchTerm: searchTerm, page: 1) { [weak self] (photos, error) in
+            guard let this = self else { return }
+            if let error = error {
+                NSLog("Error performing photo search: \(error.localizedDescription)")
+                this.viewController?.presentBasicInfoAlertWith(title: NSLocalizedString("SEARCH_ERROR_TITLE", comment: ""),
+                                                               message: NSLocalizedString("SEARCH_ERROR_MESSAGE", comment: ""))
+                return
+            }
+            
+            guard let photos = photos else {
+                NSLog("Photos returned are nil")
+                return
+            }
+            
+            this.photos = photos
+            this.photoSearchViewController?.refreshUI()
+        }
+    }
 }
 
 extension PhotoSearchViewInteractor: UITableViewDataSource {
@@ -33,23 +53,7 @@ extension PhotoSearchViewInteractor: UITableViewDataSource {
 extension PhotoSearchViewInteractor: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchTerm = searchBar.text, !searchTerm.isEmpty else { return }
-        SearchManager.search(searchTerm: searchTerm, page: 1) { [weak self] (photos, error) in
-            guard let this = self else { return }
-            if let error = error {
-                NSLog("Error performing photo search: \(error.localizedDescription)")
-                this.viewController?.presentBasicInfoAlertWith(title: NSLocalizedString("SEARCH_ERROR_TITLE", comment: ""),
-                                                               message: NSLocalizedString("SEARCH_ERROR_MESSAGE", comment: ""))
-                return
-            }
-            
-            guard let photos = photos else {
-                NSLog("Photos returned are nil")
-                return
-            }
-            
-            this.photos = photos
-            this.photoSearchViewController?.refreshUI()
-        }
+        search(with: searchTerm)
     }
 }
 
