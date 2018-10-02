@@ -70,6 +70,7 @@ extension PhotoSearchViewInteractor: UITableViewDelegate {
 extension PhotoSearchViewInteractor: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchTerm = searchBar.text, !searchTerm.isEmpty else { return }
+        photos = []
         search(with: searchTerm)
     }
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Thomas Ganley. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol URLSessionTestable {
     func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
@@ -40,8 +40,10 @@ class NetworkManager: NetworkManagerTestable {
         }
         
         let request = URLRequest(url: requestURL)
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         let dataTask = NetworkManager.urlSession.dataTask(with: request) { (data, response, error) in
             DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
                 completion(data, response, error)
             }
         }
