@@ -72,6 +72,7 @@ extension PhotoSearchViewInteractor: UISearchBarDelegate {
         guard let searchTerm = searchBar.text, !searchTerm.isEmpty else { return }
         photos = []
         search(with: searchTerm)
+        UserDefaults.standard.pushSearchTermOntoSearchHistory(searchTerm: searchTerm)
     }
 }
 

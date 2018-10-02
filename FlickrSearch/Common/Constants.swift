@@ -34,4 +34,8 @@ struct Constants {
             
         }
     }
+    
+    struct UserDefaults {
+        static let searchTermHistory = "searchTermHistory"
+    }
 }

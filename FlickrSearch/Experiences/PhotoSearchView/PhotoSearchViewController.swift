@@ -25,10 +25,19 @@ final class PhotoSearchViewController: UIViewController {
     }()
     
     private lazy var searchController: UISearchController = {
-        let searchController = UISearchController(searchResultsController: nil)
+        guard let resultsController = UIStoryboard(name: "RecentSearchesView", bundle: nil)
+            .instantiateInitialViewController() as? RecentSearchesViewController else {
+            fatalError("Cannot instantiate the recent searches view.")
+        }
+        let searchController = UISearchController(searchResultsController: resultsController)
         searchController.searchBar.placeholder = NSLocalizedString("SEARCH_BAR_PLACEHOLDER", comment: "")
         searchController.searchResultsUpdater = interactor
         searchController.searchBar.delegate = interactor
+        searchController.delegate = self
+        searchController.searchBar.searchBarStyle = .minimal
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.searchBar.autocorrectionType = .no
         definesPresentationContext = true
         return searchController
     }()
@@ -38,6 +47,7 @@ final class PhotoSearchViewController: UIViewController {
         
         tableView.dataSource = interactor
         tableView.delegate = interactor
+        view.backgroundColor = .appDarkGrey
         setupTableView()
     }
     
@@ -46,6 +56,14 @@ final class PhotoSearchViewController: UIViewController {
         enterSearchTermLabel = nil
         tableView.reloadData()
         searchController.isActive = false
+    }
+}
+
+// MARK: - Search controller delegate
+extension PhotoSearchViewController: UISearchControllerDelegate {
+    
+    func didPresentSearchController(_ searchController: UISearchController) {
+        searchController.searchResultsController?.view.isHidden = false
     }
 }
 

@@ -19,6 +19,7 @@
 		181DFC6421601BCF005061E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6221601BCF005061E0 /* Main.storyboard */; };
 		181DFC6621601BD3005061E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6521601BD3005061E0 /* Assets.xcassets */; };
 		181DFC6921601BD3005061E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6721601BD3005061E0 /* LaunchScreen.storyboard */; };
+		1833DC722164231600F9148E /* UserDefaults+AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833DC712164231600F9148E /* UserDefaults+AppExtensions.swift */; };
 		189EC9DD21601E3300A32A1A /* PhotoSearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189EC9DC21601E3300A32A1A /* PhotoSearchView.storyboard */; };
 		189EC9DF21601E4C00A32A1A /* PhotoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9DE21601E4C00A32A1A /* PhotoSearchViewController.swift */; };
 		189EC9E121601E5F00A32A1A /* PhotoSearchViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9E021601E5F00A32A1A /* PhotoSearchViewInteractor.swift */; };
@@ -66,6 +67,7 @@
 		181DFC6521601BD3005061E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181DFC6821601BD3005061E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181DFC6A21601BD3005061E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1833DC712164231600F9148E /* UserDefaults+AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AppExtensions.swift"; sourceTree = "<group>"; };
 		189EC9DC21601E3300A32A1A /* PhotoSearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoSearchView.storyboard; sourceTree = "<group>"; };
 		189EC9DE21601E4C00A32A1A /* PhotoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewController.swift; sourceTree = "<group>"; };
 		189EC9E021601E5F00A32A1A /* PhotoSearchViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewInteractor.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				180128802161289700F6FE20 /* UIColor+AppExtensions.swift */,
 				18C23BBC2162F5200018740D /* UIViewController+AppExtensions.swift */,
 				18C23BBE2162F78A0018740D /* UIImageView+AppExtensions.swift */,
+				1833DC712164231600F9148E /* UserDefaults+AppExtensions.swift */,
 				189ECA122160632300A32A1A /* Tests */,
 			);
 			path = "Apple Extensions";
@@ -416,6 +419,7 @@
 				189EC9EF21601F1F00A32A1A /* NetworkManager.swift in Sources */,
 				189EC9E521601E7B00A32A1A /* PhotoDetailViewController.swift in Sources */,
 				189ECA0E21605EDB00A32A1A /* URL+AppExtensions.swift in Sources */,
+				1833DC722164231600F9148E /* UserDefaults+AppExtensions.swift in Sources */,
 				189EC9DF21601E4C00A32A1A /* PhotoSearchViewController.swift in Sources */,
 				18012889216133C400F6FE20 /* SearchManager.swift in Sources */,
 				189EC9EC21601EE100A32A1A /* Constants.swift in Sources */,
