@@ -39,6 +39,7 @@
 		189ECA172160676A00A32A1A /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA162160676A00A32A1A /* NetworkManagerTests.swift */; };
 		189ECA1A2160820D00A32A1A /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA192160820D00A32A1A /* PhotoTests.swift */; };
 		18C23BBD2162F5200018740D /* UIViewController+AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C23BBC2162F5200018740D /* UIViewController+AppExtensions.swift */; };
+		18C23BBF2162F78A0018740D /* UIImageView+AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C23BBE2162F78A0018740D /* UIImageView+AppExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		189ECA162160676A00A32A1A /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		189ECA192160820D00A32A1A /* PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
 		18C23BBC2162F5200018740D /* UIViewController+AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AppExtensions.swift"; sourceTree = "<group>"; };
+		18C23BBE2162F78A0018740D /* UIImageView+AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+AppExtensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,8 +226,9 @@
 			children = (
 				189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */,
 				180128802161289700F6FE20 /* UIColor+AppExtensions.swift */,
-				189ECA122160632300A32A1A /* Tests */,
 				18C23BBC2162F5200018740D /* UIViewController+AppExtensions.swift */,
+				18C23BBE2162F78A0018740D /* UIImageView+AppExtensions.swift */,
+				189ECA122160632300A32A1A /* Tests */,
 			);
 			path = "Apple Extensions";
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C23BBF2162F78A0018740D /* UIImageView+AppExtensions.swift in Sources */,
 				189ECA0A21604D5300A32A1A /* FlickrSearchError.swift in Sources */,
 				189EC9E921601EBB00A32A1A /* PhotoTableViewCell.swift in Sources */,
 				181DFC5F21601BCF005061E0 /* AppDelegate.swift in Sources */,

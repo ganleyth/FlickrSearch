@@ -49,7 +49,9 @@ final class PhotoSearchViewController: UIViewController {
 private extension PhotoSearchViewController {
     func setupTableView() {
         tableView.tableHeaderView = searchController.searchBar
-        tableView.register(PhotoTableViewCell.self, forCellReuseIdentifier: "photoCell")
+        tableView.register(UINib(nibName: "PhotoTableViewCell", bundle: nil), forCellReuseIdentifier: "photoCell")
+        tableView.estimatedRowHeight = 200.0
+        tableView.rowHeight = UITableView.automaticDimension
         let backgroundView = UIView(frame: .zero)
         backgroundView.backgroundColor = .appDarkGrey
         tableView.backgroundView = backgroundView

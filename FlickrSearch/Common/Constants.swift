@@ -30,7 +30,7 @@ struct Constants {
             static let noJSONCallback = "1"
             static let perPage = "25"
             static let searchMethod = "flickr.photos.search"
-            static let sortByDateDesc = "date-posted-desc"
+            static let sortByDateDesc = "relevance"
             
         }
     }
