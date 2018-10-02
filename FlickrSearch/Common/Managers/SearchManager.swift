@@ -11,6 +11,7 @@ import Foundation
 class SearchManager {
     static let defaultSearchParams = [
         Constants.FlickrAPI.Key.format: Constants.FlickrAPI.Value.jsonFormat,
+        Constants.FlickrAPI.Key.noJSONCallback: Constants.FlickrAPI.Value.noJSONCallback,
         Constants.FlickrAPI.Key.method: Constants.FlickrAPI.Value.searchMethod,
         Constants.FlickrAPI.Key.perPage: Constants.FlickrAPI.Value.perPage,
         Constants.FlickrAPI.Key.sort: Constants.FlickrAPI.Value.sortByDateDesc,

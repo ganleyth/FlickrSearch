@@ -5,3 +5,8 @@
 "API_PLIST_NOT_FOUND" = "The API plist file is not found.";
 "DATA_RETURNED_IS_NIL" = "The API returned no error and 200 status code but data is nil.";
 "HTTP_STATUS_CODE" = "The HTTP response from search server is not 200.";
+
+// Alerts
+"ALERT_BUTTON_OK" = "OK";
+"SEARCH_ERROR_TITLE" = "Search Error";
+"SEARCH_ERROR_MESSAGE" = "There was an error performing your search. Please check your network connection and try again.";

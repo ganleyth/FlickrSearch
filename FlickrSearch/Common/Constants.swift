@@ -17,6 +17,7 @@ struct Constants {
             static let apiKeyPlist = "apiKey"
             static let format = "format"
             static let method = "method"
+            static let noJSONCallback = "nojsoncallback"
             static let page = "page"
             static let perPage = "per_page"
             static let searchURL = "searchURL"
@@ -26,6 +27,7 @@ struct Constants {
         
         struct Value {
             static let jsonFormat = "json"
+            static let noJSONCallback = "1"
             static let perPage = "25"
             static let searchMethod = "flickr.photos.search"
             static let sortByDateDesc = "date-posted-desc"

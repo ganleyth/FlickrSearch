@@ -12,7 +12,6 @@ final class PhotoSearchViewController: UIViewController {
     
     @IBOutlet private(set) var interactor: PhotoSearchViewInteractor!
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet private weak var searchBar: UISearchBar!
     
     private lazy var enterSearchTermLabel: UILabel? = {
         let label = UILabel(frame: .zero)
@@ -27,21 +26,29 @@ final class PhotoSearchViewController: UIViewController {
     
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
-//        searchController.inputViewController = 
+        searchController.searchResultsUpdater = interactor
+        searchController.searchBar.delegate = interactor
+        definesPresentationContext = true
+        return searchController
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = interactor
-        searchBar.delegate = interactor
         setupTableView()
+    }
+    
+    func refreshUI() {
+        tableView.reloadData()
+        searchController.isActive = false
     }
 }
 
 // MARK: - Private helpers
 private extension PhotoSearchViewController {
     func setupTableView() {
+        tableView.tableHeaderView = searchController.searchBar
         tableView.register(PhotoTableViewCell.self, forCellReuseIdentifier: "photoCell")
         let backgroundView = UIView(frame: .zero)
         backgroundView.backgroundColor = .appDarkGrey

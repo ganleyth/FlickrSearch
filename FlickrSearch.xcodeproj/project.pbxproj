@@ -38,6 +38,7 @@
 		189ECA142160633F00A32A1A /* URL+AppExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */; };
 		189ECA172160676A00A32A1A /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA162160676A00A32A1A /* NetworkManagerTests.swift */; };
 		189ECA1A2160820D00A32A1A /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ECA192160820D00A32A1A /* PhotoTests.swift */; };
+		18C23BBD2162F5200018740D /* UIViewController+AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C23BBC2162F5200018740D /* UIViewController+AppExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		189ECA132160633F00A32A1A /* URL+AppExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AppExtensionsTests.swift"; sourceTree = "<group>"; };
 		189ECA162160676A00A32A1A /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		189ECA192160820D00A32A1A /* PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
+		18C23BBC2162F5200018740D /* UIViewController+AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AppExtensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				189ECA0D21605EDB00A32A1A /* URL+AppExtensions.swift */,
 				180128802161289700F6FE20 /* UIColor+AppExtensions.swift */,
 				189ECA122160632300A32A1A /* Tests */,
+				18C23BBC2162F5200018740D /* UIViewController+AppExtensions.swift */,
 			);
 			path = "Apple Extensions";
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				189EC9F121601F2B00A32A1A /* DataCacheManager.swift in Sources */,
 				189EC9F321601F4800A32A1A /* Photo.swift in Sources */,
 				189EC9E121601E5F00A32A1A /* PhotoSearchViewInteractor.swift in Sources */,
+				18C23BBD2162F5200018740D /* UIViewController+AppExtensions.swift in Sources */,
 				18012893216161CD00F6FE20 /* RecentSearchesViewController.swift in Sources */,
 				189EC9EF21601F1F00A32A1A /* NetworkManager.swift in Sources */,
 				189EC9E521601E7B00A32A1A /* PhotoDetailViewController.swift in Sources */,

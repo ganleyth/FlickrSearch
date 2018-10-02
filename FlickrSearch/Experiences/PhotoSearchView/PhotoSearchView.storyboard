@@ -17,24 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search by title, description, or tags" translatesAutoresizingMaskIntoConstraints="NO" id="Ohf-WC-l5i">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tQa-3U-TE4">
-                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ohf-WC-l5i" firstAttribute="leading" secondItem="whU-A9-RwP" secondAttribute="leading" id="Ahn-I4-ZNi"/>
                             <constraint firstItem="tQa-3U-TE4" firstAttribute="leading" secondItem="whU-A9-RwP" secondAttribute="leading" id="Qc5-zO-aek"/>
+                            <constraint firstItem="tQa-3U-TE4" firstAttribute="top" secondItem="whU-A9-RwP" secondAttribute="top" id="Uxd-LY-hvJ"/>
                             <constraint firstItem="whU-A9-RwP" firstAttribute="bottom" secondItem="tQa-3U-TE4" secondAttribute="bottom" id="bH3-yL-sgz"/>
                             <constraint firstItem="whU-A9-RwP" firstAttribute="trailing" secondItem="tQa-3U-TE4" secondAttribute="trailing" id="e7G-Yt-KtF"/>
-                            <constraint firstItem="Ohf-WC-l5i" firstAttribute="top" secondItem="whU-A9-RwP" secondAttribute="top" id="hpO-2v-Jpl"/>
-                            <constraint firstItem="tQa-3U-TE4" firstAttribute="top" secondItem="Ohf-WC-l5i" secondAttribute="bottom" id="ipl-cn-04t"/>
-                            <constraint firstItem="Ohf-WC-l5i" firstAttribute="trailing" secondItem="whU-A9-RwP" secondAttribute="trailing" id="m5m-Ge-wzs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="whU-A9-RwP"/>
                     </view>
@@ -42,7 +35,6 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="interactor" destination="77O-qR-ygI" id="BZL-Cg-3dY"/>
-                        <outlet property="searchBar" destination="Ohf-WC-l5i" id="igc-8F-h7X"/>
                         <outlet property="tableView" destination="tQa-3U-TE4" id="ZdL-RX-CWz"/>
                     </connections>
                 </viewController>
