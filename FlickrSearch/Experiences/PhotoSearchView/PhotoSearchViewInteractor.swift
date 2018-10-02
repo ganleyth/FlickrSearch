@@ -67,6 +67,13 @@ extension PhotoSearchViewInteractor: UITableViewDelegate {
         currentPage += 1
         search(with: lastSearchTerm)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let photoSearchViewController = photoSearchViewController else { return }
+        let photo = photos[indexPath.row]
+        photoSearchViewController.presentDetailView(with: photo)
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
 }
 
 // MARK: - Search bar delegate
@@ -83,6 +90,8 @@ extension PhotoSearchViewInteractor: UISearchBarDelegate {
 extension PhotoSearchViewInteractor: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         // Update the previously used search terms
+        // For more polish, I would filter the previously used search terms here so that the user can start typing and then
+        // see the search terms they've already used in the past.
     }
 }
 

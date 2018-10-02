@@ -60,6 +60,12 @@ final class PhotoSearchViewController: UIViewController {
         tableView.reloadData()
         searchController.isActive = false
     }
+    
+    func presentDetailView(with photo: Photo) {
+        guard let detailView = UIStoryboard(name: "PhotoDetailView", bundle: nil).instantiateInitialViewController() as? PhotoDetailViewController else { return }
+        detailView.photo = photo
+        present(detailView, animated: true, completion: nil)
+    }
 }
 
 // MARK: - Search controller delegate

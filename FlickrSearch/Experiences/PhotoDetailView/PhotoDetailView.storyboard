@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bQv-Dv-SSu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bQv-Dv-SSu">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,6 +26,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI2-PZ-jvf">
+                                <rect key="frame" x="16" y="60" width="15.666666666666664" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="ZUp-rq-Hwz"/>
+                                    <constraint firstAttribute="width" secondItem="tI2-PZ-jvf" secondAttribute="height" multiplier="44:45" id="n0a-Hr-ReH"/>
+                                </constraints>
+                                <state key="normal" image="DismissButton"/>
+                                <connections>
+                                    <action selector="dismissView:" destination="bQv-Dv-SSu" eventType="touchUpInside" id="M9X-G8-EJR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -35,8 +46,10 @@
                             <constraint firstItem="IfS-4D-98O" firstAttribute="leading" secondItem="Ikn-0L-K4i" secondAttribute="leading" constant="16" id="AKo-UT-QEd"/>
                             <constraint firstItem="Ikn-0L-K4i" firstAttribute="trailing" secondItem="IfS-4D-98O" secondAttribute="trailing" constant="16" id="Sek-E7-EBH"/>
                             <constraint firstItem="IfS-4D-98O" firstAttribute="centerX" secondItem="ZsU-h7-K29" secondAttribute="centerX" id="eNN-Yv-t2Z"/>
+                            <constraint firstItem="tI2-PZ-jvf" firstAttribute="leading" secondItem="Ikn-0L-K4i" secondAttribute="leading" constant="16" id="ivh-6J-Lcr"/>
                             <constraint firstItem="iUK-lh-ElJ" firstAttribute="top" secondItem="Ikn-0L-K4i" secondAttribute="top" id="l89-L8-DyN"/>
                             <constraint firstItem="Ikn-0L-K4i" firstAttribute="bottom" secondItem="IfS-4D-98O" secondAttribute="bottom" constant="8" id="rKj-uC-ZkP"/>
+                            <constraint firstItem="tI2-PZ-jvf" firstAttribute="top" secondItem="Ikn-0L-K4i" secondAttribute="top" constant="16" id="zue-KT-SYB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ikn-0L-K4i"/>
                     </view>
@@ -50,4 +63,7 @@
             <point key="canvasLocation" x="238" y="103"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DismissButton" width="44" height="45"/>
+    </resources>
 </document>
