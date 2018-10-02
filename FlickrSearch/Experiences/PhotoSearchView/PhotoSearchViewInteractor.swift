@@ -10,12 +10,20 @@ import UIKit
 
 class PhotoSearchViewInteractor: Interactor {
     private var photos: [Photo] = []
+    private var currentPage = 1
+    private var lastSearchTerm: String?
+    
+    private var bottomCellIndexPath: IndexPath {
+        return IndexPath(row: photos.count - 1, section: 0)
+    }
+    
     private var photoSearchViewController: PhotoSearchViewController? {
         return viewController as? PhotoSearchViewController
     }
     
     private func search(with searchTerm: String) {
-        SearchManager.search(searchTerm: searchTerm, page: 1) { [weak self] (photos, error) in
+        lastSearchTerm = searchTerm
+        SearchManager.search(searchTerm: searchTerm, page: currentPage) { [weak self] (photos, error) in
             guard let this = self else { return }
             if let error = error {
                 NSLog("Error performing photo search: \(error.localizedDescription)")
@@ -29,7 +37,7 @@ class PhotoSearchViewInteractor: Interactor {
                 return
             }
             
-            this.photos = photos
+            this.photos += photos
             this.photoSearchViewController?.refreshUI()
         }
     }
@@ -47,6 +55,15 @@ extension PhotoSearchViewInteractor: UITableViewDataSource {
         cell.configure(with: photo)
         
         return cell
+    }
+}
+
+extension PhotoSearchViewInteractor: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard indexPath == bottomCellIndexPath,
+            let lastSearchTerm = lastSearchTerm, !lastSearchTerm.isEmpty else { return }
+        currentPage += 1
+        search(with: lastSearchTerm)
     }
 }
 

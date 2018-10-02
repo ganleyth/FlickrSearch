@@ -37,6 +37,7 @@ final class PhotoSearchViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = interactor
+        tableView.delegate = interactor
         setupTableView()
     }
     
