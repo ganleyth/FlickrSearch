@@ -11,9 +11,9 @@ import XCTest
 
 class PhotoTests: XCTestCase {
     
-    private lazy var expectedPhoto0 = Photo(id: "45008576281", secret: "3308734c6a", farm: 2, server: "1910")
-    private lazy var expectedPhoto1 = Photo(id: "45008573081", secret: "45330c0db5", farm: 2, server: "1941")
-    private lazy var expectedPhoto2 = Photo(id: "30072184927", secret: "ff4f5599dd", farm: 2, server: "1934")
+    private lazy var expectedPhoto0 = Photo(id: "45008576281", secret: "3308734c6a", farm: 2, server: "1910", title: "Fenton Handpainted Cobalt Blue Basket")
+    private lazy var expectedPhoto1 = Photo(id: "45008573081", secret: "45330c0db5", farm: 2, server: "1941", title: "Fenton Handpainted Cobalt Blue Basket")
+    private lazy var expectedPhoto2 = Photo(id: "30072184927", secret: "ff4f5599dd", farm: 2, server: "1934", title: "Fenton Handpainted Cobalt Blue Basket")
     
     func testDecodable() {
         let bundle = Bundle(for: type(of: self))

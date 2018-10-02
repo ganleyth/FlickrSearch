@@ -33,6 +33,7 @@ struct Photo: Decodable {
     let secret: String
     let farm: Int
     let server: String
+    let title: String
 }
 
 extension Photo {

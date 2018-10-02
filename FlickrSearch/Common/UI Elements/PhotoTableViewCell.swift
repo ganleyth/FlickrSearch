@@ -19,6 +19,7 @@ final class PhotoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        titleLabel.text = nil
         contentView.backgroundColor = .appDarkGrey
     }
     
@@ -26,10 +27,15 @@ final class PhotoTableViewCell: UITableViewCell {
         super.prepareForReuse()
         titleLabel.text = nil
         photoImageView.image = UIImage(named: "defaultImage")
+        titleLabelContainer.isHidden = false
     }
     
     func configure(with photo: Photo) {
-        titleLabel.text = "Placeholder Title"
+        if !photo.title.isEmpty {
+            titleLabel.text = photo.title
+        } else {
+            titleLabelContainer.isHidden = true
+        }
         photoImageView.loadImage(for: photo, size: .small)
     }
 }
