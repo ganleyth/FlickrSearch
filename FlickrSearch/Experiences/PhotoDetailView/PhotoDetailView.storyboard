@@ -17,15 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-lh-ElJ">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfS-4D-98O">
-                                <rect key="frame" x="16" y="741.33333333333337" width="343" height="28.666666666666629"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="EHP-e2-Mdr">
+                                <rect key="frame" x="0.0" y="44" width="375" height="726"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-lh-ElJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="695.33333333333337"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfS-4D-98O">
+                                        <rect key="frame" x="56.333333333333343" y="697.33333333333337" width="262.33333333333326" height="28.666666666666629"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IfS-4D-98O" firstAttribute="width" secondItem="EHP-e2-Mdr" secondAttribute="width" multiplier="0.7" id="1go-dI-yE0"/>
+                                    <constraint firstItem="iUK-lh-ElJ" firstAttribute="width" secondItem="EHP-e2-Mdr" secondAttribute="width" id="9Nl-EF-x0V"/>
+                                </constraints>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI2-PZ-jvf">
                                 <rect key="frame" x="16" y="60" width="15.666666666666664" height="16"/>
                                 <constraints>
@@ -40,15 +49,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ikn-0L-K4i" firstAttribute="bottom" secondItem="iUK-lh-ElJ" secondAttribute="bottom" id="2cD-dS-GWS"/>
-                            <constraint firstItem="iUK-lh-ElJ" firstAttribute="leading" secondItem="Ikn-0L-K4i" secondAttribute="leading" id="9WG-G3-Eho"/>
-                            <constraint firstItem="Ikn-0L-K4i" firstAttribute="trailing" secondItem="iUK-lh-ElJ" secondAttribute="trailing" id="AJz-au-G3L"/>
-                            <constraint firstItem="IfS-4D-98O" firstAttribute="leading" secondItem="Ikn-0L-K4i" secondAttribute="leading" constant="16" id="AKo-UT-QEd"/>
-                            <constraint firstItem="Ikn-0L-K4i" firstAttribute="trailing" secondItem="IfS-4D-98O" secondAttribute="trailing" constant="16" id="Sek-E7-EBH"/>
-                            <constraint firstItem="IfS-4D-98O" firstAttribute="centerX" secondItem="ZsU-h7-K29" secondAttribute="centerX" id="eNN-Yv-t2Z"/>
+                            <constraint firstItem="EHP-e2-Mdr" firstAttribute="trailing" secondItem="Ikn-0L-K4i" secondAttribute="trailing" id="1Fs-4v-bJM"/>
+                            <constraint firstItem="EHP-e2-Mdr" firstAttribute="top" secondItem="Ikn-0L-K4i" secondAttribute="top" id="7WW-ti-HEJ"/>
+                            <constraint firstItem="Ikn-0L-K4i" firstAttribute="bottom" secondItem="EHP-e2-Mdr" secondAttribute="bottom" constant="8" id="SLx-Wz-29O"/>
+                            <constraint firstItem="EHP-e2-Mdr" firstAttribute="leading" secondItem="Ikn-0L-K4i" secondAttribute="leading" id="Wzp-hn-4FG"/>
                             <constraint firstItem="tI2-PZ-jvf" firstAttribute="leading" secondItem="Ikn-0L-K4i" secondAttribute="leading" constant="16" id="ivh-6J-Lcr"/>
-                            <constraint firstItem="iUK-lh-ElJ" firstAttribute="top" secondItem="Ikn-0L-K4i" secondAttribute="top" id="l89-L8-DyN"/>
-                            <constraint firstItem="Ikn-0L-K4i" firstAttribute="bottom" secondItem="IfS-4D-98O" secondAttribute="bottom" constant="8" id="rKj-uC-ZkP"/>
                             <constraint firstItem="tI2-PZ-jvf" firstAttribute="top" secondItem="Ikn-0L-K4i" secondAttribute="top" constant="16" id="zue-KT-SYB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ikn-0L-K4i"/>
