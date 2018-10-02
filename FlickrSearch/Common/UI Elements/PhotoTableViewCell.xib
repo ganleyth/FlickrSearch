@@ -18,17 +18,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ROL-ev-Wir">
-                        <rect key="frame" x="8" y="2" width="304" height="202.5"/>
+                        <rect key="frame" x="24" y="12" width="272" height="181.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="ROL-ev-Wir" secondAttribute="height" multiplier="3:2" id="Se1-aU-5Nu"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-tD-Tog">
-                        <rect key="frame" x="8" y="204.5" width="304" height="54"/>
+                        <rect key="frame" x="24" y="193.5" width="272" height="63"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ut-5x-7wI">
-                                <rect key="frame" x="16" y="8" width="57" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="16" y="16" width="60" height="31"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -36,19 +36,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3ut-5x-7wI" firstAttribute="leading" secondItem="yLg-tD-Tog" secondAttribute="leading" constant="16" id="KOf-Wh-c0D"/>
-                            <constraint firstAttribute="bottom" secondItem="3ut-5x-7wI" secondAttribute="bottom" constant="8" id="OSi-gb-at9"/>
-                            <constraint firstItem="3ut-5x-7wI" firstAttribute="top" secondItem="yLg-tD-Tog" secondAttribute="top" constant="8" id="qa3-Mc-P9m"/>
+                            <constraint firstAttribute="bottom" secondItem="3ut-5x-7wI" secondAttribute="bottom" constant="16" id="OSi-gb-at9"/>
+                            <constraint firstItem="3ut-5x-7wI" firstAttribute="top" secondItem="yLg-tD-Tog" secondAttribute="top" constant="16" id="qa3-Mc-P9m"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ROL-ev-Wir" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Dvz-HQ-E5c"/>
-                    <constraint firstAttribute="trailing" secondItem="ROL-ev-Wir" secondAttribute="trailing" constant="8" id="Evz-KS-iap"/>
-                    <constraint firstItem="yLg-tD-Tog" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="FMI-jM-DcU"/>
-                    <constraint firstAttribute="trailing" secondItem="yLg-tD-Tog" secondAttribute="trailing" constant="8" id="Mbn-vs-QVg"/>
+                    <constraint firstItem="ROL-ev-Wir" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="Dvz-HQ-E5c"/>
+                    <constraint firstAttribute="trailing" secondItem="ROL-ev-Wir" secondAttribute="trailing" constant="24" id="Evz-KS-iap"/>
+                    <constraint firstItem="yLg-tD-Tog" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="FMI-jM-DcU"/>
+                    <constraint firstAttribute="trailing" secondItem="yLg-tD-Tog" secondAttribute="trailing" constant="24" id="Mbn-vs-QVg"/>
                     <constraint firstItem="yLg-tD-Tog" firstAttribute="top" secondItem="ROL-ev-Wir" secondAttribute="bottom" id="Ta1-3E-BQv"/>
-                    <constraint firstAttribute="bottom" secondItem="yLg-tD-Tog" secondAttribute="bottom" constant="2" id="egK-jh-j4I"/>
-                    <constraint firstItem="ROL-ev-Wir" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="lfd-MW-Lin"/>
+                    <constraint firstAttribute="bottom" secondItem="yLg-tD-Tog" secondAttribute="bottom" constant="4" id="egK-jh-j4I"/>
+                    <constraint firstItem="ROL-ev-Wir" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="lfd-MW-Lin"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

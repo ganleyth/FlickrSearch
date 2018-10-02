@@ -17,6 +17,11 @@ final class PhotoTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleLabelContainer: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        contentView.backgroundColor = .appDarkGrey
+    }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text = nil
