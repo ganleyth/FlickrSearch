@@ -29,6 +29,7 @@ final class PhotoSearchViewController: UIViewController {
             .instantiateInitialViewController() as? RecentSearchesViewController else {
             fatalError("Cannot instantiate the recent searches view.")
         }
+        resultsController.delegate = interactor
         let searchController = UISearchController(searchResultsController: resultsController)
         searchController.searchBar.placeholder = NSLocalizedString("SEARCH_BAR_PLACEHOLDER", comment: "")
         searchController.searchResultsUpdater = interactor

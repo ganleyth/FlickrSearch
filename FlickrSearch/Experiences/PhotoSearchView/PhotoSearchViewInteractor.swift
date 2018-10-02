@@ -43,6 +43,7 @@ class PhotoSearchViewInteractor: Interactor {
     }
 }
 
+// MARK: - Table view data source
 extension PhotoSearchViewInteractor: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,6 +59,7 @@ extension PhotoSearchViewInteractor: UITableViewDataSource {
     }
 }
 
+// MARK: - Table view delegate
 extension PhotoSearchViewInteractor: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard indexPath == bottomCellIndexPath,
@@ -67,6 +69,7 @@ extension PhotoSearchViewInteractor: UITableViewDelegate {
     }
 }
 
+// MARK: - Search bar delegate
 extension PhotoSearchViewInteractor: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchTerm = searchBar.text, !searchTerm.isEmpty else { return }
@@ -76,8 +79,17 @@ extension PhotoSearchViewInteractor: UISearchBarDelegate {
     }
 }
 
+// MARK: - Search results updating
 extension PhotoSearchViewInteractor: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         // Update the previously used search terms
+    }
+}
+
+// MARK: - Recent searches delegate
+extension PhotoSearchViewInteractor: RecentSearchesDelegate {
+    func didSelectRecentSearchTerm(_ searchTerm: String) {
+        photos = []
+        search(with: searchTerm)
     }
 }

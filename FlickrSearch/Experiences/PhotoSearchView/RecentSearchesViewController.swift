@@ -8,11 +8,16 @@
 
 import UIKit
 
+protocol RecentSearchesDelegate: class {
+    func didSelectRecentSearchTerm(_ searchTerm: String)
+}
+
 class RecentSearchesViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
     private var lastTenSearchTerms: [String]?
+    weak var delegate: RecentSearchesDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +49,9 @@ extension RecentSearchesViewController: UITableViewDataSource {
 
 extension RecentSearchesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Implement search again
+        guard let searchTerm = lastTenSearchTerms?[indexPath.row] else { fatalError("There are no recent search terms.") }
+        delegate?.didSelectRecentSearchTerm(searchTerm)
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
 
