@@ -9,7 +9,7 @@
 import Foundation
 
 struct PhotoSearchResponse: Decodable {
-    let photoResponse: PhotosResponse
+    private let photoResponse: PhotosResponse
     
     var photos: [Photo] {
         return photoResponse.photos
@@ -18,13 +18,13 @@ struct PhotoSearchResponse: Decodable {
     private enum CodingKeys: String, CodingKey {
         case photoResponse = "photos"
     }
-}
-
-struct PhotosResponse: Decodable {
-    let photos: [Photo]
     
-    private enum CodingKeys: String, CodingKey {
-        case photos = "photo"
+    private struct PhotosResponse: Decodable {
+        let photos: [Photo]
+        
+        private enum CodingKeys: String, CodingKey {
+            case photos = "photo"
+        }
     }
 }
 
