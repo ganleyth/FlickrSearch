@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoSearchViewInteractor: Interactor {
+final class PhotoSearchViewInteractor: Interactor {
     private var photos: [Photo] = []
     private var currentPage = 1
     private var lastSearchTerm: String?

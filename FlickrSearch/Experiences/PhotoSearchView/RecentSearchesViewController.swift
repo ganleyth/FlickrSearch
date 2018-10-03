@@ -12,7 +12,7 @@ protocol RecentSearchesDelegate: class {
     func didSelectRecentSearchTerm(_ searchTerm: String)
 }
 
-class RecentSearchesViewController: UIViewController {
+final class RecentSearchesViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     

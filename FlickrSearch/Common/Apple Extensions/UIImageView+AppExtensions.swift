@@ -10,6 +10,10 @@ import UIKit
 
 extension UIImageView {
     
+    /**
+     Loads the image of the provided photo in the image view by first checking the data cache, and then if not available there,
+     requesting the data via network call.
+     */
     func loadImage(for photo: Photo, size: Photo.Size) {
         self.image = UIImage(named: "defaultImage")
         

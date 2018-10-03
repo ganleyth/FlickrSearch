@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoDetailViewController: UIViewController {
+final class PhotoDetailViewController: UIViewController {
     @IBOutlet private weak var photoImageView: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
     

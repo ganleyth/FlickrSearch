@@ -10,6 +10,9 @@ import UIKit
 
 extension UIViewController {
     
+    /**
+     Presents a basic alert with a title and a message, along with an 'OK' button that the user can use to dismiss the alert.
+     */
     func presentBasicInfoAlertWith(title: String?, message: String?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: NSLocalizedString("ALERT_BUTTON_OK", comment: ""),
