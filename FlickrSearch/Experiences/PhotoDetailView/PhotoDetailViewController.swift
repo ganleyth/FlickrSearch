@@ -29,6 +29,8 @@ final class PhotoDetailViewController: UIViewController {
         guard let photo = photo else { return }
         titleLabel.text = photo.title
         photoImageView.loadImage(for: photo, size: .medium)
+        
+        titleLabel.textColor = .appTextAlmostWhite
     }
     
     @IBAction func dismissView(_ sender: UIButton) {

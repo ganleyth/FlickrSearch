@@ -47,6 +47,7 @@ extension RecentSearchesViewController: UITableViewDataSource {
         guard let searchTerms = lastTenSearchTerms else { fatalError("Calling cellForRowAt when there is no search history.") }
         let cell = tableView.dequeueReusableCell(withIdentifier: "recentSearchCell", for: indexPath)
         cell.textLabel?.text = searchTerms[indexPath.row]
+        cell.textLabel?.textColor = .appTextAlmostWhite
         cell.backgroundColor = .appDarkGrey
         return cell
     }

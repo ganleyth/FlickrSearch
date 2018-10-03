@@ -20,7 +20,8 @@ final class PhotoTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         titleLabel.text = nil
-        contentView.backgroundColor = .appDarkGrey
+        contentView.backgroundColor = .appDarkerGrey
+        configureSubviews()
     }
     
     override func prepareForReuse() {
@@ -37,5 +38,19 @@ final class PhotoTableViewCell: UITableViewCell {
             titleLabelContainer.isHidden = true
         }
         photoImageView.loadImage(for: photo, size: .small)
+    }
+    
+    private func configureSubviews() {
+        // Image view
+        photoImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        photoImageView.layer.cornerRadius = 8.0
+        
+        // Title label container
+        titleLabelContainer.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        titleLabelContainer.layer.cornerRadius = 16.0
+        titleLabelContainer.backgroundColor = .appDarkGrey
+        
+        // Title label
+        titleLabel.textColor = .appTextAlmostWhite
     }
 }

@@ -50,7 +50,7 @@ final class PhotoSearchViewController: UIViewController {
         
         tableView.dataSource = interactor
         tableView.delegate = interactor
-        view.backgroundColor = .appDarkGrey
+        view.backgroundColor = .appDarkerGrey
         setupTableView()
     }
     
@@ -85,7 +85,7 @@ private extension PhotoSearchViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.scrollsToTop = true
         let backgroundView = UIView(frame: .zero)
-        backgroundView.backgroundColor = .appDarkGrey
+        backgroundView.backgroundColor = .appDarkerGrey
         tableView.backgroundView = backgroundView
         if let label = enterSearchTermLabel {
             enhanceTableViewBackground(with: label)
