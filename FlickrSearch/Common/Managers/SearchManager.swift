@@ -8,7 +8,14 @@
 
 import Foundation
 
-class SearchManager {
+enum SearchTermSearchResult {
+    case success([Photo])
+    case failure(Error)
+}
+
+typealias SearchTermSearchHandler = (_ result: SearchTermSearchResult) -> Void
+
+final class SearchManager {
     static let defaultSearchParams = [
         Constants.FlickrAPI.Key.format: Constants.FlickrAPI.Value.jsonFormat,
         Constants.FlickrAPI.Key.noJSONCallback: Constants.FlickrAPI.Value.noJSONCallback,
@@ -19,12 +26,10 @@ class SearchManager {
     
     static var NetworkManagerType: NetworkManagerTestable.Type = NetworkManager.self
     
-    static func search(searchTerm: String,
-                       page: Int,
-                       completion: @escaping (_ photos: [Photo]?, _ error: Error?) -> Void) {
+    static func search(searchTerm: String, page: Int, completion: @escaping SearchTermSearchHandler) {
         guard let plistPath = Bundle.main.path(forResource: "FlickrAPI", ofType: "plist"),
             let plist = NSDictionary(contentsOfFile: plistPath) else {
-                completion(nil, FlickrSearchError.APIPlistNotFound)
+                completion(.failure(FlickrSearchError.APIPlistNotFound))
                 return
         }
         
@@ -41,32 +46,32 @@ class SearchManager {
         ].merging(SearchManager.defaultSearchParams) { (current, new) in return current }
         
         NetworkManagerType.performRequestFor(url: flickrURL, queryParameters: queryParameters) { (data, response, error) in
-            var photos: [Photo]?
-            var completionError: Error?
+            var result: SearchTermSearchResult?
             defer {
-                completion(photos, completionError)
+                guard let unwrappedResult = result else { fatalError() }
+                completion(unwrappedResult)
             }
             
             if let error = error {
-                completionError = error
+                result = .failure(error)
                 return
             }
             
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completionError = FlickrSearchError.HTTPStatusCode
+                result = .failure(FlickrSearchError.HTTPStatusCode)
                 return
             }
             
             guard let data = data else {
-                completionError = FlickrSearchError.DataReturnedIsNil
+                result = .failure(FlickrSearchError.DataReturnedIsNil)
                 return
             }
             
             do {
                 let searchResponse = try JSONDecoder().decode(PhotoSearchResponse.self, from: data)
-                photos = searchResponse.photos
+                result = .success(searchResponse.photos)
             } catch {
-                completionError = error
+                result = .failure(error)
                 return
             }
         }
