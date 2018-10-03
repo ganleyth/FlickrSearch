@@ -24,6 +24,7 @@ final class PhotoDetailViewController: UIViewController {
         super.viewDidLoad()
         setUI()
     }
+    
     private func setUI() {
         guard let photo = photo else { return }
         titleLabel.text = photo.title
