@@ -20,6 +20,7 @@
 		181DFC6621601BD3005061E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6521601BD3005061E0 /* Assets.xcassets */; };
 		181DFC6921601BD3005061E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DFC6721601BD3005061E0 /* LaunchScreen.storyboard */; };
 		1833DC722164231600F9148E /* UserDefaults+AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833DC712164231600F9148E /* UserDefaults+AppExtensions.swift */; };
+		1833DC7721644B6200F9148E /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833DC7621644B6200F9148E /* AppNavigationController.swift */; };
 		189EC9DD21601E3300A32A1A /* PhotoSearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189EC9DC21601E3300A32A1A /* PhotoSearchView.storyboard */; };
 		189EC9DF21601E4C00A32A1A /* PhotoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9DE21601E4C00A32A1A /* PhotoSearchViewController.swift */; };
 		189EC9E121601E5F00A32A1A /* PhotoSearchViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EC9E021601E5F00A32A1A /* PhotoSearchViewInteractor.swift */; };
@@ -68,6 +69,7 @@
 		181DFC6821601BD3005061E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181DFC6A21601BD3005061E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1833DC712164231600F9148E /* UserDefaults+AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AppExtensions.swift"; sourceTree = "<group>"; };
+		1833DC7621644B6200F9148E /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		189EC9DC21601E3300A32A1A /* PhotoSearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoSearchView.storyboard; sourceTree = "<group>"; };
 		189EC9DE21601E4C00A32A1A /* PhotoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewController.swift; sourceTree = "<group>"; };
 		189EC9E021601E5F00A32A1A /* PhotoSearchViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewInteractor.swift; sourceTree = "<group>"; };
@@ -148,6 +150,14 @@
 			path = FlickrSearch;
 			sourceTree = "<group>";
 		};
+		1833DC7521644B3100F9148E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1833DC7621644B6200F9148E /* AppNavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		189EC9D421601CE700A32A1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +170,7 @@
 		189EC9D521601CF400A32A1A /* Experiences */ = {
 			isa = PBXGroup;
 			children = (
+				1833DC7521644B3100F9148E /* Navigation */,
 				189EC9D821601D3E00A32A1A /* PhotoSearchView */,
 				189EC9D921601D4400A32A1A /* PhotoDetailView */,
 			);
@@ -422,6 +433,7 @@
 				1833DC722164231600F9148E /* UserDefaults+AppExtensions.swift in Sources */,
 				189EC9DF21601E4C00A32A1A /* PhotoSearchViewController.swift in Sources */,
 				18012889216133C400F6FE20 /* SearchManager.swift in Sources */,
+				1833DC7721644B6200F9148E /* AppNavigationController.swift in Sources */,
 				189EC9EC21601EE100A32A1A /* Constants.swift in Sources */,
 				180128812161289700F6FE20 /* UIColor+AppExtensions.swift in Sources */,
 			);
